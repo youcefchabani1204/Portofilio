@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Youcef</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <canvas id="heroParticles"></canvas>
+  <!-- ==== Navigation ==== -->
+  <nav>
+    <div class="logo">CH SERVICES</div>
+    <ul>
+      <li><a href="#about">À propos</a></li>
+      <li><a href="#skills">Compétences</a></li>
+      <li><a href="#projects">Projets</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ==== Hero ==== -->
+  <header>
+    <h1>Youcef & Yacine</h1>
+    <p>Monteur Vidéo & Designer 3D</p>
+   
+  </header>
+
+  <!-- ==== About ==== -->
+  <section id="about" class="about">
+    <h2>À propos</h2>
+    <p class="center-text">
+      Je crée des visuels immersifs et dynamiques combinant montage vidéo, Blender et motion design pour des projets uniques et artistiques.
+    </p>
+  </section>
+
+  <!-- ==== Skills ==== -->
+  <section id="skills" class="skills-section">
+    <h2>Compétences</h2>
+    <div class="skills">
+      <div class="skill">🎬 Montage Vidéo</div>
+      <div class="skill">🎨 Blender 3D</div>
+      <div class="skill">✍️ Motion Design</div>
+    </div>
+  </section>
+
+  <!-- ==== Projects ==== -->
+  <section id="projects" class="projects-section">
+    <h2>Projets</h2>
+    <div class="projects">
+      <div class="project">
+        <img src="https://via.placeholder.com/400x250" alt="Projet 1">
+        <div class="overlay">Projet 1 - Animation Blender</div>
+      </div>
+      <div class="project">
+        <img src="https://via.placeholder.com/400x250" alt="Projet 2">
+        <div class="overlay">Projet 2 - Motion Design</div>
+      </div>
+      <div class="project">
+        <img src="https://via.placeholder.com/400x250" alt="Projet 3">
+        <div class="overlay">Projet 3 - Montage Vidéo</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==== Contact ==== -->
+  <section id="contact" class="contact-section">
+    <h2>Contact</h2>
+    <form>
+      <input type="text" placeholder="Nom" required>
+      <input type="email" placeholder="Email" required>
+      <textarea rows="5" placeholder="Votre message" required></textarea>
+      <button type="submit">Envoyer</button>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
