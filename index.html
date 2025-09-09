@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio - Youcef</title>
@@ -10,15 +12,15 @@
 <body>
  <canvas id="heroParticles"></canvas>
   <!-- ==== Navigation ==== -->
-  <nav>
-    <div class="logo">CH SERVICES</div>
-    <ul>
-      <li><a href="#about">À propos</a></li>
-      <li><a href="#skills">Compétences</a></li>
-      <li><a href="#projects">Projets</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+  <nav class="navbar">
+  <div class="logo">CH SERVICES</div>
+  <ul>
+    <li><a href="#about">À propos</a></li>
+    <li><a href="#skills">Compétences</a></li>
+    <li><a href="#projects">Projets</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
 
   <!-- ==== Hero ==== -->
   <header>
@@ -65,16 +67,22 @@
   </section>
 
   <!-- ==== Contact ==== -->
-  <section id="contact" class="contact-section">
-    <h2>Contact</h2>
-    <form>
-      <input type="text" placeholder="Nom" required>
-      <input type="email" placeholder="Email" required>
-      <textarea rows="5" placeholder="Votre message" required></textarea>
-      <button type="submit">Envoyer</button>
-    </form>
-  </section>
+  <section class="contact-section" id="contact">
+  <h2>Contact</h2>
+  <form id="contact-form">
+    <input type="text" name="prenom" placeholder="Prénom" required>
+    <input type="text" name="nom" placeholder="Nom" required>
+    <input type="email" name="email" placeholder="Email" required>
+    <input type="tel" name="tel" placeholder="Téléphone" required>
+    <textarea name="message" placeholder="Message" required></textarea>
+    <button type="submit">Envoyer</button>
+  </form>
+</section>
 
   <script src="script.js"></script>
+  <!-- Charge EmailJS depuis le CDN -->
+
+<!-- Ton fichier JS séparé -->
+<script src="contact.js"></script>
 </body>
 </html>
